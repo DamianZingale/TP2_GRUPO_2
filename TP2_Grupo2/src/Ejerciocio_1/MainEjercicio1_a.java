@@ -19,6 +19,13 @@ public class MainEjercicio1_a {
 		p.add(P4);
 		p.add(P5);
 		
+		
+		ListIterator<Profesor> it = p.listIterator();
+		while(it.hasNext()) {
+		Profesor x = it.next();
+		System.out.println(x.toString());
+		it.remove();
+		}
 	}
 
 }
