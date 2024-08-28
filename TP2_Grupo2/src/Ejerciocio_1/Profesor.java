@@ -17,7 +17,7 @@ public class Profesor extends Empleado {
 	}
 	
 	//constructor con parametros
-	public Profesor(String cargo, int antiguedad,String name, int age ) {
+	public Profesor(String name, int age, String cargo, int antiguedad) {
 		
 		super(name, age);
 		
@@ -45,7 +45,7 @@ public class Profesor extends Empleado {
 
 	@Override
 	public String toString() {
-		return "Profesor [cargo: " + cargo + ", antiguedadDocente: " + antiguedadDocente + "]";
+		return "\n Id: " + get_id() + "\n Nombre: " + get_name() + "\n Edad: " + get_age() + "\n Cargo: " + cargo + "\n Antiguedad: " + antiguedadDocente;
 	}
 
 	
