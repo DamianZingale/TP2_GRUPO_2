@@ -9,7 +9,7 @@ public class Profesor extends Empleado {
 	
 	//constructor sin parametros
 	
-	public Profesor() {
+	protected Profesor() {
 		
 		super();
 		cargo = "En espera que alguen se jubile";
@@ -17,7 +17,7 @@ public class Profesor extends Empleado {
 	}
 	
 	//constructor con parametros
-	public Profesor(String name, int age, String cargo, int antiguedad) {
+	protected Profesor(String name, int age, String cargo, int antiguedad) {
 		
 		super(name, age);
 		
