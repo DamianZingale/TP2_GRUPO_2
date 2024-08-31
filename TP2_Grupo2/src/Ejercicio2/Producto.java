@@ -3,8 +3,16 @@ package Ejercicio2;
 public class Producto {
     private String fechaDeCaducidad;
     private int numeroDeLote;
+    
+    public Producto() {};
 
-    public String getFechaDeCaducidad() {
+    public Producto(String fechaDeCaducidad, int numeroDeLote) {
+		super();
+		this.fechaDeCaducidad = fechaDeCaducidad;
+		this.numeroDeLote = numeroDeLote;
+	}
+    
+	public String getFechaDeCaducidad() {
         return fechaDeCaducidad;
     }
     public void setFechaDeCaducidad(String fechaDeCaducidad) {

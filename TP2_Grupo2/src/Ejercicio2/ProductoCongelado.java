@@ -3,9 +3,6 @@ package Ejercicio2;
 public class ProductoCongelado extends Producto {
 	
 	
-	
-	private String fechaDeCaducidad;
-	private int numeroDeLote;
 	private int temperaturaRecomendada;
 	
 	
@@ -16,9 +13,7 @@ public class ProductoCongelado extends Producto {
 
 
 	public ProductoCongelado(String fechaDeCaducidad, int numeroDeLote, int temperaturaRecomendada) {
-		super();
-		this.fechaDeCaducidad = fechaDeCaducidad;
-		this.numeroDeLote = numeroDeLote;
+		super(fechaDeCaducidad,numeroDeLote);
 		this.temperaturaRecomendada = temperaturaRecomendada;
 	}
 	
