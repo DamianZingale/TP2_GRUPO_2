@@ -25,12 +25,31 @@ public class Profesor extends Empleado {
 		antiguedadDocente = antiguedad;
 		
 	}
+	//GETTERS & SETTERS
 	
+	public String getCargo() {
+		return cargo;
+	}
+
+	public void setCargo(String cargo) {
+		this.cargo = cargo;
+	}
+
+	public int getAntiguedadDocente() {
+		return antiguedadDocente;
+	}
+
+	public void setAntiguedadDocente(int antiguedadDocente) {
+		this.antiguedadDocente = antiguedadDocente;
+	}
+	
+	//HASHCODE
 	@Override
 	public int hashCode() {
 		return Objects.hash(antiguedadDocente, cargo);
 	}
 
+	//EQUALS
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -40,9 +59,13 @@ public class Profesor extends Empleado {
 		if (getClass() != obj.getClass())
 			return false;
 		Profesor other = (Profesor) obj;
-		return antiguedadDocente == other.antiguedadDocente && Objects.equals(cargo, other.cargo);
+		 return this.get_name().equals(other.get_name()) && 
+		           this.get_age() == other.get_age() &&
+		           this.cargo.equals(other.cargo) && 
+		           this.antiguedadDocente == other.antiguedadDocente;
 	}
 
+	//METODO TOSTRING()
 	@Override
 	public String toString() {
 		return "\n Id: " + get_id() + "\n Nombre: " + get_name() + "\n Edad: " + get_age() + "\n Cargo: " + cargo + "\n Antiguedad: " + antiguedadDocente;
