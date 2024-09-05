@@ -17,6 +17,28 @@ public class ProductoCongelado extends Producto {
 		this.temperaturaRecomendada = temperaturaRecomendada;
 	}
 	
+	///GET Y SET
+
+
+	public int getTemperaturaRecomendada() {
+		return temperaturaRecomendada;
+	}
+
+
+	public void setTemperaturaRecomendada(int temperaturaRecomendada) {
+		this.temperaturaRecomendada = temperaturaRecomendada;
+	}
+	
+	//TOSTRING();
+
+
+	@Override
+	public String toString() {
+		return "ProductoCongelado" +"\n Fecha de caducidad: " + getFechaDeCaducidad() + 
+				"\n Numero de lote: " + getNumeroDeLote() +
+				"\n temperaturaRecomendada: " + temperaturaRecomendada;
+	}
+	
 	
 	
 	
