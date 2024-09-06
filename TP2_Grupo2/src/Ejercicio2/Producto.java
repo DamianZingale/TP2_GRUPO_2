@@ -7,7 +7,7 @@ public class Producto {
     public Producto() {};
 
     public Producto(String fechaDeCaducidad, int numeroDeLote) {
-		super();
+		
 		this.fechaDeCaducidad = fechaDeCaducidad;
 		this.numeroDeLote = numeroDeLote;
 	}

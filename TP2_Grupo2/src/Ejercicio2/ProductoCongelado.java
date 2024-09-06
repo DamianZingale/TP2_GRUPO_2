@@ -34,9 +34,9 @@ public class ProductoCongelado extends Producto {
 
 	@Override
 	public String toString() {
-		return "ProductoCongelado" +"\n Fecha de caducidad: " + getFechaDeCaducidad() + 
+		return "Producto Congelado:" +"\n Fecha de caducidad: " + getFechaDeCaducidad() + 
 				"\n Numero de lote: " + getNumeroDeLote() +
-				"\n temperaturaRecomendada: " + temperaturaRecomendada;
+				"\n temperaturaRecomendada: " + temperaturaRecomendada + " °C";
 	}
 	
 	

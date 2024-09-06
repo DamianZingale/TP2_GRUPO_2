@@ -24,9 +24,9 @@ public class ProductoRefrigerado extends Producto {
     //METODO TOSTRING()
     @Override
     public String toString() {
-        return "Producto Refrigerado" + 
-        		"\n Fecha de caducidad:" + getFechaDeCaducidad() + 
+        return "Producto Refrigerado:" + 
+        		"\n Fecha de caducidad: " + getFechaDeCaducidad() + 
         		"\n Numero de lote: " + getNumeroDeLote() +
-                "\n Código del organismo: " + codigoDelOrganismo;
+                "\n Codigo del organismo: " + codigoDelOrganismo;
     }
 }

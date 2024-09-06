@@ -31,7 +31,7 @@ public class ProductoFresco extends Producto {
 
 	@Override
 	public String toString() {
-		return "ProductoFresco " + "\n Fecha de caducidad:" + getFechaDeCaducidad() +
+		return "Producto Fresco: " + "\n Fecha de caducidad:" + getFechaDeCaducidad() +
 		"\n Numero de lote: " + getNumeroDeLote() + "\n Fecha de envasado: " + fechaDeEnvasado + "\n Pais de origen: " + paisDeOrigen;
 	}
 	
