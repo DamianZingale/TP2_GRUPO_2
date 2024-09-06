@@ -11,7 +11,7 @@ public class EdificioDeOficinas implements Edificio{
     }
 
     @Override
-    double getSuperficieEdificio() {
+	public double getSuperficieEdificio() {
         return superficie;
     }
 
